@@ -187,8 +187,7 @@ while True:
 
     if (in_progress == False):
         if (not finalOccurrenceCheck()):
-            print("Invalid because of too few occurrences of a letter(s)")  # MUST CHECK TO SEE IF THIS WORKS!!!
-            
+            print("Invalid because of too few occurrences of a letter(s)")
         else:
             print("No problems were found. It is valid")
         print("---------------------------------")
