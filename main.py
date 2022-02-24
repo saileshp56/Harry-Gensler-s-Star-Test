@@ -163,7 +163,7 @@ right_side = 0
 in_progress = True
 
 print(
-    "Enter a premise and only capitalize the propositions (if needed). For conclusion start the sentence with * and a space. To quit at anytime, enter quit\nSample Input: some A is not B\n")
+    "Enter a premise using well-formed formulas. For conclusion start the sentence with * and a space. To quit at anytime, enter quit\nSample Input:\nsome A is not B\nall C is B\n* some A is not C\n")
 
 while True:
     premise = input("Enter a premise or conclusion:\n")
