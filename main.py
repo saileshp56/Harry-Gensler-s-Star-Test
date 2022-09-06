@@ -174,23 +174,29 @@ while True:
 
     if (not occurrenceCheck()):
         print("Invalid because of too many occurrences of a letter(s)")
-        in_progress = False
+
+        break
     if (right_side > 1):
         print("Invalid because of right side having: 2 stars")
-        in_progress = False
+
+        break
     if (not starCount()):
         print("Invalid because a letter has too many stars")
-        in_progress = False
-    if (in_progress == False and not starCountTwo()):
-        print("Invalid because a letter has too few stars")
-        in_progress = False
 
-    if (in_progress == False):
+        break
+    if (not in_progress and not starCountTwo()):
+        print("Invalid because a letter has too few stars")
+     
+        break
+
+    if (not in_progress):
         if (not finalOccurrenceCheck()):
             print("Invalid because of too few occurrences of a letter(s)")
+            break
         else:
             print("No problems were found. It is valid")
         print("---------------------------------")
+        break
 
         letters.clear()
         stars.clear()
